@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Filter from "./Filter";
 import Item from "./Item";
-import Filter from './Filter';
 
 function ShoppingList({ items }) {
+  console.log('From app, data being worked with: ', items)
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   function handleCategoryChange(event) {
